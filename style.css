@@ -1,0 +1,107 @@
+body{
+	background-color: black;
+	font-family: serif;
+}
+
+#header{
+	background-color: red;
+	font-family: fantasy;
+	border: black 1px solid;
+	text-indent: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+h1{
+	padding: 50px;
+	margin-bottom: 30px;
+}
+
+#content{
+	background-color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 2%;
+}
+
+a{
+	color: blue;
+	text-decoration: unset;
+}
+
+#navBar{
+	display: flex;
+	background-color: gray;
+	margin: 10px 10px 5px;
+	height: 50px;
+	justify-content: space-between;
+}
+
+#imgMain{
+	width: 90%;
+}
+
+#titleDestaque{
+	display: flex;
+	justify-content: center;
+	text-shadow: grey 1px 1px 2px;
+	font-family: Arial;
+}
+
+#products{
+	display: flex;
+	justify-content: space-between;
+}
+
+.productsHighlight{
+	border: gray 1px solid;
+	margin-left: 10px;
+	margin-right: 10px;
+	box-shadow: gray 2px 2px 3px;
+	text-align: justify;
+	font-size: 20px;
+
+}
+
+.imgHL{
+	width: 80%;
+	margin-left: 8px;
+	margin-right: 5px;
+	margin-top: 5%;
+}
+
+#footer{
+	background-color: rgb(100, 100, 100);
+	padding-top: 30px;
+	margin-top:
+	justify-content:space-between; 
+}
+
+#social{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: white;
+	font-family: 'Segoe Ui';
+}
+
+button{
+	color: blue;
+	background-color: rgb(80, 90, 200);
+	border: rgb(80, 90, 200) 1px solid;
+	border-radius: 6px;
+}
+
+input{
+	size: 100%;
+}
+
+h1{
+  animation-name: colorChange;
+  animation-duration: 4s;
+}
+
+@keyframes colorChange {
+  from {color: black;}
+  to {color: yellow;}
+}
