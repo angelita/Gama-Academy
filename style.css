@@ -1,64 +1,95 @@
 body{
-	background-color: black;
-	font-family: serif;
+	background-color: white;
+	font-family: sans-serif;
 }
 
-#header{
-	background-color: red;
-	font-family: fantasy;
-	border: black 1px solid;
-	text-indent: 10px;
-	border-radius: 10px;
-	text-align: center;
-}
-
-h1{
-	padding: 50px;
+h2{
+	/*padding: 10px;*/
 	margin-bottom: 30px;
+	font-size: 30px;
+}
+.header{
+	background-color: white;
+	/*border: black 1px solid;*/
+	text-indent: 10px;
+	border-radius: 5px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between; 
+}
+
+#navBar{
+	display: flex;
+	background-color: white;
+	margin: 10px 10px 10px 10px;
+	padding: 10px;
+	height: 40px;
+	justify-content: space-between; 
+	text-shadow: #cccccc 1px 1px 1px;
+	/*animation-name: colorChange;
+ 	animation-duration: 4s;*/
+	transition-duration: 0.4s;
+
+}
+#navBar:hover{
+	background-color: #e60000;
+	color: white;
 }
 
 #content{
 	background-color: white;
 	margin-left: 10%;
-	margin-right: 10%;
+/*	margin-right: 10%;*/
 	padding: 2%;
 }
 
 a{
-	color: blue;
+	color: black;
 	text-decoration: unset;
 }
 
-#navBar{
-	display: flex;
-	background-color: gray;
-	margin: 10px 10px 5px;
-	height: 50px;
-	justify-content: space-between;
-}
 
 #imgMain{
 	width: 90%;
 }
 
-#titleDestaque{
-	display: flex;
+.highlight{
+
 	justify-content: center;
-	text-shadow: grey 1px 1px 2px;
+	/*text-shadow: grey 1px 1px 2px;*/
 	font-family: Arial;
 }
 
-#products{
+.newsContent{
+	display: flex;
+	justify-content: space-between;
+}
+.news{
+	padding: 10px;
+}
+
+.newsTitle{
+	font-size: 20px;
+	font-weight: bold;
+}
+.newsPic{
+	width: 80%;
+	padding: 10px;
+}
+h2{
+	padding: 10px;
+
+}
+#tutorial{
 	display: flex;
 	justify-content: space-between;
 }
 
-.productsHighlight{
-	border: gray 1px solid;
+.tutHighlight{
+
 	margin-left: 10px;
 	margin-right: 10px;
-	box-shadow: gray 2px 2px 3px;
-	text-align: justify;
+	text-align: left;
 	font-size: 20px;
 
 }
@@ -83,6 +114,11 @@ a{
 	margin-top: 20px;
 	color: white;
 	font-family: 'Segoe Ui';
+	width: 10%;
+}
+
+.socialIcon{
+	width: 40%;
 }
 
 button{
@@ -96,12 +132,26 @@ input{
 	size: 100%;
 }
 
-h1{
-  animation-name: colorChange;
-  animation-duration: 4s;
-}
 
 @keyframes colorChange {
   from {color: black;}
-  to {color: yellow;}
+  to {color: red;}
+}
+
+.contactForm{
+	padding: 16px;
+	display: inline-block;
+}
+
+.about{
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.imgProfile{
+	padding: 10px;
+	width: 40%;
+}
+input[type=text], input[type=password] {
+  width: 100%;
 }
